@@ -7,8 +7,9 @@ noButton.addEventListener('mouseenter', function() {
   const randomX = Math.floor(Math.random() * (window.innerWidth - 100));
   const randomY = Math.floor(Math.random() * (window.innerHeight - 50));
   noButton.style.position = 'absolute';
-  noButton.style.left = ${randomX}px;
-  noButton.style.top = ${randomY}px;
+  // Asegúrate de usar ` para las plantillas literales
+  noButton.style.left = `${randomX}px`;
+  noButton.style.top = `${randomY}px`;
 });
 
 // Muestra un mensaje al hacer clic en "Sí"
